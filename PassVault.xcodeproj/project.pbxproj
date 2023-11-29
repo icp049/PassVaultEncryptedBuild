@@ -1,0 +1,401 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A62B2A6C2B16EF56003ADE36 /* PassVaultApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62B2A6B2B16EF56003ADE36 /* PassVaultApp.swift */; };
+		A62B2A702B16EF63003ADE36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A62B2A6F2B16EF63003ADE36 /* Assets.xcassets */; };
+		A62B2A732B16EF63003ADE36 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A62B2A722B16EF63003ADE36 /* Preview Assets.xcassets */; };
+		A62B2A7C2B16F05D003ADE36 /* AccountModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A62B2A7A2B16F05D003ADE36 /* AccountModel.xcdatamodeld */; };
+		A62B2A7E2B16F193003ADE36 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62B2A7D2B16F193003ADE36 /* DataController.swift */; };
+		A62B2A822B16F266003ADE36 /* TimeFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62B2A812B16F266003ADE36 /* TimeFormatting.swift */; };
+		A62B2A842B16F2AC003ADE36 /* AddAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62B2A832B16F2AC003ADE36 /* AddAccountView.swift */; };
+		A62B2A862B16F2DA003ADE36 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62B2A852B16F2DA003ADE36 /* ContentView.swift */; };
+		A62B2A882B16F2F5003ADE36 /* EditAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62B2A872B16F2F5003ADE36 /* EditAccountView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A62B2A682B16EF56003ADE36 /* PassVault.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PassVault.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A62B2A6B2B16EF56003ADE36 /* PassVaultApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassVaultApp.swift; sourceTree = "<group>"; };
+		A62B2A6F2B16EF63003ADE36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A62B2A722B16EF63003ADE36 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A62B2A7B2B16F05D003ADE36 /* AccountModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AccountModel.xcdatamodel; sourceTree = "<group>"; };
+		A62B2A7D2B16F193003ADE36 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		A62B2A812B16F266003ADE36 /* TimeFormatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeFormatting.swift; sourceTree = "<group>"; };
+		A62B2A832B16F2AC003ADE36 /* AddAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountView.swift; sourceTree = "<group>"; };
+		A62B2A852B16F2DA003ADE36 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A62B2A872B16F2F5003ADE36 /* EditAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAccountView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A62B2A652B16EF56003ADE36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A62B2A5F2B16EF56003ADE36 = {
+			isa = PBXGroup;
+			children = (
+				A62B2A6A2B16EF56003ADE36 /* PassVault */,
+				A62B2A692B16EF56003ADE36 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A62B2A692B16EF56003ADE36 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A62B2A682B16EF56003ADE36 /* PassVault.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A62B2A6A2B16EF56003ADE36 /* PassVault */ = {
+			isa = PBXGroup;
+			children = (
+				A62B2A802B16F21D003ADE36 /* helpers */,
+				A62B2A7F2B16F211003ADE36 /* Views */,
+				A62B2A792B16F00F003ADE36 /* DataModel */,
+				A62B2A6B2B16EF56003ADE36 /* PassVaultApp.swift */,
+				A62B2A6F2B16EF63003ADE36 /* Assets.xcassets */,
+				A62B2A712B16EF63003ADE36 /* Preview Content */,
+			);
+			path = PassVault;
+			sourceTree = "<group>";
+		};
+		A62B2A712B16EF63003ADE36 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A62B2A722B16EF63003ADE36 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A62B2A792B16F00F003ADE36 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				A62B2A7A2B16F05D003ADE36 /* AccountModel.xcdatamodeld */,
+				A62B2A7D2B16F193003ADE36 /* DataController.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		A62B2A7F2B16F211003ADE36 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A62B2A832B16F2AC003ADE36 /* AddAccountView.swift */,
+				A62B2A852B16F2DA003ADE36 /* ContentView.swift */,
+				A62B2A872B16F2F5003ADE36 /* EditAccountView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A62B2A802B16F21D003ADE36 /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A62B2A812B16F266003ADE36 /* TimeFormatting.swift */,
+			);
+			path = helpers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A62B2A672B16EF56003ADE36 /* PassVault */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A62B2A762B16EF63003ADE36 /* Build configuration list for PBXNativeTarget "PassVault" */;
+			buildPhases = (
+				A62B2A642B16EF56003ADE36 /* Sources */,
+				A62B2A652B16EF56003ADE36 /* Frameworks */,
+				A62B2A662B16EF56003ADE36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PassVault;
+			productName = PassVault;
+			productReference = A62B2A682B16EF56003ADE36 /* PassVault.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A62B2A602B16EF56003ADE36 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					A62B2A672B16EF56003ADE36 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = A62B2A632B16EF56003ADE36 /* Build configuration list for PBXProject "PassVault" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A62B2A5F2B16EF56003ADE36;
+			productRefGroup = A62B2A692B16EF56003ADE36 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A62B2A672B16EF56003ADE36 /* PassVault */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A62B2A662B16EF56003ADE36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A62B2A732B16EF63003ADE36 /* Preview Assets.xcassets in Resources */,
+				A62B2A702B16EF63003ADE36 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A62B2A642B16EF56003ADE36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A62B2A822B16F266003ADE36 /* TimeFormatting.swift in Sources */,
+				A62B2A7C2B16F05D003ADE36 /* AccountModel.xcdatamodeld in Sources */,
+				A62B2A862B16F2DA003ADE36 /* ContentView.swift in Sources */,
+				A62B2A842B16F2AC003ADE36 /* AddAccountView.swift in Sources */,
+				A62B2A7E2B16F193003ADE36 /* DataController.swift in Sources */,
+				A62B2A882B16F2F5003ADE36 /* EditAccountView.swift in Sources */,
+				A62B2A6C2B16EF56003ADE36 /* PassVaultApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A62B2A742B16EF63003ADE36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A62B2A752B16EF63003ADE36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A62B2A772B16EF63003ADE36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PassVault/Preview Content\"";
+				DEVELOPMENT_TEAM = AB2AUQ6XU8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pepe.PassVault;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A62B2A782B16EF63003ADE36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PassVault/Preview Content\"";
+				DEVELOPMENT_TEAM = AB2AUQ6XU8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pepe.PassVault;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A62B2A632B16EF56003ADE36 /* Build configuration list for PBXProject "PassVault" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A62B2A742B16EF63003ADE36 /* Debug */,
+				A62B2A752B16EF63003ADE36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A62B2A762B16EF63003ADE36 /* Build configuration list for PBXNativeTarget "PassVault" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A62B2A772B16EF63003ADE36 /* Debug */,
+				A62B2A782B16EF63003ADE36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A62B2A7A2B16F05D003ADE36 /* AccountModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A62B2A7B2B16F05D003ADE36 /* AccountModel.xcdatamodel */,
+			);
+			currentVersion = A62B2A7B2B16F05D003ADE36 /* AccountModel.xcdatamodel */;
+			path = AccountModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A62B2A602B16EF56003ADE36 /* Project object */;
+}
