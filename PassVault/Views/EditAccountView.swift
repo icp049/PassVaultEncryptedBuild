@@ -16,12 +16,12 @@ var body: some View {
 
     Form{
         Section {
-            TextField ("\(account.name)", text: $name)
+            TextField ("\(account.name!)", text: $name)
 
-             TextField ("\(account.password)", text: $password)
+             TextField ("\(account.password!)", text: $password)
             .onAppear{
-                name = account.name
-                password = account.password
+                name = account.name!
+                password = account.password!
             }
 
             HStack{

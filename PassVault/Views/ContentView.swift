@@ -3,8 +3,8 @@ import CoreData
 
 struct ContentView: View {
 
-    @Environment(\.managedObjContext) var managedObjContext
-    @FetchRequest(sortDescriptors: [SortDescriptor(\.date, order: .reverse)]) var account: FetchResults<Account>
+    @Environment(\.managedObjectContext) var managedObjContext
+    @FetchRequest(sortDescriptors: [SortDescriptor(\.date, order: .reverse)]) var account: FetchedResults<Account>
 
     @State private var showingAddView = false
 
@@ -60,7 +60,7 @@ struct ContentView: View {
             
 
             withAnimation{
-                offsets.map {account[$0] }.ForEach(managedObjContext.delete)
+                offsets.map {account[$0] }.forEach(managedObjContext.delete)
 
                 DataController().save(context: managedObjContext)
             }
