@@ -9,13 +9,17 @@ struct AddAccountView: View {
     @Environment(\.managedObjectContext) var managedObjContext
     @Environment(\.dismiss) var dismiss
     
+
     @State private var name = ""
+    @State private var username = ""
     @State private var password = ""
     
     var body: some View {
             Form {
                 Section() {
                     TextField("Account", text: $name)
+                    
+                    TextField("Username", text: $username)
                     
                     
                     TextField("Password", text: $password)
@@ -25,6 +29,7 @@ struct AddAccountView: View {
                         Button("Submit") {
                             DataController().addAccount(
                                 name: name,
+                                username: username,
                                 password: password,
                                 context: managedObjContext)
                             dismiss()

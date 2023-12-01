@@ -24,21 +24,23 @@ class DataController: ObservableObject{
 
    }
 
-   func addAccount(name: String, password: String, context: NSManagedObjectContext){
+    func addAccount(name: String, username: String, password: String, context: NSManagedObjectContext){
     
     let account = Account(context:context)
     account.id = UUID()
     account.date = Date()
     account.name = name
+    account.username = username
     account.password = password
     
     save(context:context)
 
    }
 
-   func editAccount(account: Account, name: String, password: String, context:NSManagedObjectContext){
+    func editAccount(account: Account, name: String, username: String, password: String, context:NSManagedObjectContext){
     account.date = Date()
     account.name = name
+    account.username = username
     account.password = password
 
     save(context:context)

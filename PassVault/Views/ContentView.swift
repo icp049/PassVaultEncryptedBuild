@@ -25,6 +25,8 @@ struct ContentView: View {
                                     Text(account.name!)
                                         .bold()
                                     
+                                    Text(account.username!)
+                                    
                                     Text(account.password!)
                                         .bold()
                                     
