@@ -15,10 +15,10 @@ struct AddAccountView: View {
     var body: some View {
             Form {
                 Section() {
-                    TextField("Food name", text: $name)
+                    TextField("Account", text: $name)
                     
                     
-                    TextField("Food name", text: $name)
+                    TextField("Password", text: $password)
                     
                     HStack {
                         Spacer()

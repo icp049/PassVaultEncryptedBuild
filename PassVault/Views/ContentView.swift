@@ -40,7 +40,6 @@ struct ContentView: View {
                 }
                 .listStyle(.plain)
             }
-            .navigationTitle("iCalories")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button {
