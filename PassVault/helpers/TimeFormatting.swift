@@ -1,5 +1,8 @@
+
+
 import Foundation
 
+// Formats the time since
 func calcTimeSince(date: Date) -> String {
     let minutes = Int(-date.timeIntervalSinceNow)/60
     let hours = minutes/60
@@ -7,9 +10,8 @@ func calcTimeSince(date: Date) -> String {
     
     if minutes < 120 {
         return "\(minutes) minutes ago"
-    } else if minutes >= 120 && hours < 48 {
+    } else if minutes >= 120 && hours < 24 {
         return "\(hours) hours ago"
-        
     } else {
         return "\(days) days ago"
     }
