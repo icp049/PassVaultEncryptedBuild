@@ -24,8 +24,9 @@ struct ContentView: View {
                                 VStack(alignment: .leading, spacing: 6) {
                                     Text(account.name!)
                                         .bold()
+                                        .foregroundColor(.red)
                                     
-                                    Text(account.username!)
+                                    Text(String(repeating: "•", count: account.username?.count ?? 0))
                                     
                                     
                                     Text(String(repeating: "•", count: account.password?.count ?? 0))
@@ -45,16 +46,24 @@ struct ContentView: View {
                     Button {
                         showingAddView.toggle()
                     } label: {
-                        Label("Add food", systemImage: "plus")
+                        Label("Add Account", systemImage: "plus")
                     }
                 }
                 
+                ToolbarItem(placement: .navigationBarLeading) {
+                                   Text("Accounts")
+                                       .font(.headline)
+                                       .foregroundColor(.blue)
+                               }
             }
             .sheet(isPresented: $showingAddView) {
                 AddAccountView()
             }
+          
         }
-        .navigationViewStyle(.stack) // Removes sidebar on iPad
+      
+        .navigationViewStyle(.stack)
+       
     }
     
     // Deletes food at the current offset
