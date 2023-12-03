@@ -45,12 +45,10 @@ struct ContentView: View {
                     Button {
                         showingAddView.toggle()
                     } label: {
-                        Label("Add food", systemImage: "plus.circle")
+                        Label("Add food", systemImage: "plus")
                     }
                 }
-                ToolbarItem(placement: .navigationBarLeading) {
-                    EditButton()
-                }
+                
             }
             .sheet(isPresented: $showingAddView) {
                 AddAccountView()
