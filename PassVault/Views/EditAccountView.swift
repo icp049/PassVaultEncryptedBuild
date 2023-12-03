@@ -22,10 +22,19 @@ struct EditAccountView: View {
         Form {
             Section() {
                 TextField("\(account.name!)", text: $name)
+                    .autocapitalization(.none)
+                    .autocorrectionDisabled()
+                
                 
                 TextField("\(account.username!)", text: $username)
+                    .autocapitalization(.none)
+                    .autocorrectionDisabled()
+                
                 
                 TextField("\(account.password!)", text: $password)
+                    .autocapitalization(.none)
+                    .autocorrectionDisabled()
+                
                     .onAppear {
                         name = account.name!
                         username = account.username!
