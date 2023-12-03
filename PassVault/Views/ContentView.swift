@@ -1,18 +1,14 @@
-//
-//  ContentView.swift
-//  SampleCoreData
-//
-//  Created by Federico on 18/02/2022.
-//
-
 import SwiftUI
 import CoreData
+import LocalAuthentication
 
 struct ContentView: View {
     @Environment(\.managedObjectContext) var managedObjContext
     @FetchRequest(sortDescriptors: [SortDescriptor(\.date, order: .reverse)]) var account: FetchedResults<Account>
     
     @State private var showingAddView = false
+    @State private var unlocked = false
+    @State private var text = "LOCKED"
     
     var body: some View {
         NavigationView {
@@ -29,12 +25,16 @@ struct ContentView: View {
                                     
                                     Text(String(repeating: "•", count: account.username?.count ?? 0))
                                     
-                                    
                                     Text(String(repeating: "•", count: account.password?.count ?? 0))
-                                 
-                                    
                                 }
-                               
+                            }
+                            .onTapGesture {
+                                authenticate { success in
+                                    // If authenticated, navigate to the AccountView
+                                    if success {
+                                        // You may perform additional actions if needed
+                                    }
+                                }
                             }
                         }
                     }
@@ -52,33 +52,26 @@ struct ContentView: View {
                 }
                 
                 ToolbarItem(placement: .navigationBarLeading) {
-                    HStack{
-                        
+                    HStack {
                         Image("padlock")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 30, height: 30)
                         
                         Text("Accounts")
-                            
                             .foregroundColor(.blue)
                             .font(.system(size: 22))
-                     
                     }
-                    
-                               }
+                }
             }
             .sheet(isPresented: $showingAddView) {
                 AddAccountView()
             }
-          
         }
-      
         .navigationViewStyle(.stack)
-       
     }
     
-    // Deletes food at the current offset
+    // Deletes account at the current offset
     private func deleteAccount(offsets: IndexSet) {
         withAnimation {
             offsets.map { account[$0] }
@@ -89,12 +82,33 @@ struct ContentView: View {
         }
     }
     
-    
+    func authenticate(completion: @escaping (Bool) -> Void) {
+        let context = LAContext()
+        var error: NSError?
+        
+        if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics,
+                                     error: &error) {
+            context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics,
+                                   localizedReason: "Security") { success, authenticationError in
+                
+                if success {
+                    text = "UNLOCKED"
+                    completion(true)
+                } else {
+                    text = "There was a problem"
+                    completion(false)
+                }
+            }
+        } else {
+            text = "Phone does not have biometrics"
+            completion(false)
+        }
+    }
 }
-
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
 }
+
