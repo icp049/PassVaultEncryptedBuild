@@ -19,7 +19,7 @@ struct ContentView: View {
             VStack(alignment: .leading) {
                 List {
                     ForEach(account) { account in
-                        NavigationLink(destination: EditAccountView(account: account)) {
+                        NavigationLink(destination: AccountView(account: account)) {
                             HStack {
                                 VStack(alignment: .leading, spacing: 6) {
                                     Text(account.name!)
@@ -27,8 +27,9 @@ struct ContentView: View {
                                     
                                     Text(account.username!)
                                     
-                                    Text(account.password!)
-                                        .bold()
+                                    
+                                    Text(String(repeating: "•", count: account.password?.count ?? 0))
+                                 
                                     
                                 }
                                 Spacer()
