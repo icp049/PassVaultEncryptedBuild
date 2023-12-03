@@ -52,9 +52,20 @@ struct ContentView: View {
                 }
                 
                 ToolbarItem(placement: .navigationBarLeading) {
-                                   Text("Accounts")
-                                       .font(.headline)
-                                       .foregroundColor(.blue)
+                    HStack{
+                        
+                        Image("padlock")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 24, height: 24)
+                        
+                        Text("Accounts")
+                            .font(.headline)
+                            .foregroundColor(.blue)
+                        
+                     
+                    }
+                    
                                }
             }
             .sheet(isPresented: $showingAddView) {
