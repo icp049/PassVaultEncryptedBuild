@@ -9,15 +9,13 @@ struct AccountView: View {
         VStack {
            
             
-            Group {
                 Text("Name: \(account.name ?? "")")
                 Text("Username: \(account.username ?? "")")
                 Text("Password: \(account.password ?? "")")
                 Text(calcTimeSince(date: account.date!))
                     .foregroundColor(.gray)
                     .italic()
-            }
-            .padding()
+           
             
             Spacer()
             
