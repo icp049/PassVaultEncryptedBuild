@@ -26,7 +26,9 @@ struct AddAccountView: View {
                     
                     HStack {
                         Spacer()
-                        Button("Submit") {
+                        
+                        
+                        RUButton(title: "Add Account", background:.black){
                             DataController().addAccount(
                                 name: name,
                                 username: username,
@@ -34,6 +36,12 @@ struct AddAccountView: View {
                                 context: managedObjContext)
                             dismiss()
                         }
+                        .padding()
+                        
+                        
+                        
+                        
+                   
                         Spacer()
                     }
                 }

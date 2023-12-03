@@ -17,6 +17,7 @@
 		A62B2A862B16F2DA003ADE36 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62B2A852B16F2DA003ADE36 /* ContentView.swift */; };
 		A62B2A882B16F2F5003ADE36 /* EditAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62B2A872B16F2F5003ADE36 /* EditAccountView.swift */; };
 		A6828B3A2B1C1F44009CA6C8 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6828B392B1C1F44009CA6C8 /* AccountView.swift */; };
+		A6828B3C2B1C360D009CA6C8 /* RUButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6828B3B2B1C360D009CA6C8 /* RUButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		A62B2A852B16F2DA003ADE36 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A62B2A872B16F2F5003ADE36 /* EditAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAccountView.swift; sourceTree = "<group>"; };
 		A6828B392B1C1F44009CA6C8 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		A6828B3B2B1C360D009CA6C8 /* RUButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RUButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 				A62B2A852B16F2DA003ADE36 /* ContentView.swift */,
 				A62B2A872B16F2F5003ADE36 /* EditAccountView.swift */,
 				A6828B392B1C1F44009CA6C8 /* AccountView.swift */,
+				A6828B3B2B1C360D009CA6C8 /* RUButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A62B2A822B16F266003ADE36 /* TimeFormatting.swift in Sources */,
+				A6828B3C2B1C360D009CA6C8 /* RUButton.swift in Sources */,
 				A62B2A7C2B16F05D003ADE36 /* AccountModel.xcdatamodeld in Sources */,
 				A62B2A862B16F2DA003ADE36 /* ContentView.swift in Sources */,
 				A62B2A842B16F2AC003ADE36 /* AddAccountView.swift in Sources */,
