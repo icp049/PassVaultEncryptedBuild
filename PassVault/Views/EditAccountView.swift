@@ -36,13 +36,17 @@ struct EditAccountView: View {
                 
                 HStack {
                     Spacer()
-                    Button("Submit") {
+                    
+                    RUButton(title: "Add Account", background:.black){
                         DataController().editAccount(account: account, name: name, username: username, password: password, context: managedObjContext)
                         dismiss()
+                        
                     }
+                    .padding()
                     Spacer()
                 }
             }
         }
     }
 }
+
