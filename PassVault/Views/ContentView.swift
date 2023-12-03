@@ -25,7 +25,7 @@ struct ContentView: View {
                                     Text(account.name!)
                                         .bold()
                                         .foregroundColor(.red)
-                                        .font(.system(size: 18))
+                                        .font(.system(size: 15))
                                     
                                     Text(String(repeating: "•", count: account.username?.count ?? 0))
                                     
@@ -57,7 +57,7 @@ struct ContentView: View {
                         Image("padlock")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                            .frame(width: 24, height: 24)
+                            .frame(width: 30, height: 30)
                         
                         Text("Accounts")
                             
