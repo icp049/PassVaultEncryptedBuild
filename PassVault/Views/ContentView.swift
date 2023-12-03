@@ -25,7 +25,7 @@ struct ContentView: View {
                                     Text(account.name!)
                                         .bold()
                                         .foregroundColor(.red)
-                                        .font(.system(size: 23))
+                                        .font(.system(size: 18))
                                     
                                     Text(String(repeating: "•", count: account.username?.count ?? 0))
                                     
@@ -60,9 +60,9 @@ struct ContentView: View {
                             .frame(width: 24, height: 24)
                         
                         Text("Accounts")
-                            .font(.headline)
+                            
                             .foregroundColor(.blue)
-                        
+                            .font(.system(size: 22))
                      
                     }
                     
