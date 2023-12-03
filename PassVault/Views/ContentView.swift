@@ -25,6 +25,7 @@ struct ContentView: View {
                                     Text(account.name!)
                                         .bold()
                                         .foregroundColor(.red)
+                                        .font(.system(size: 23))
                                     
                                     Text(String(repeating: "•", count: account.username?.count ?? 0))
                                     
