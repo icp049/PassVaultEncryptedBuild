@@ -13,10 +13,14 @@ struct AccountView: View {
                 Text("Name: \(account.name ?? "")")
                 Text("Username: \(account.username ?? "")")
                 Text("Password: \(account.password ?? "")")
+                Text(calcTimeSince(date: account.date!))
+                    .foregroundColor(.gray)
+                    .italic()
             }
             .padding()
             
             Spacer()
+            
         }
        
         .toolbar {
@@ -31,6 +35,8 @@ struct AccountView: View {
         }
     }
 }
+
+
 
 
 

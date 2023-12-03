@@ -32,10 +32,7 @@ struct ContentView: View {
                                  
                                     
                                 }
-                                Spacer()
-                                Text(calcTimeSince(date: account.date!))
-                                    .foregroundColor(.gray)
-                                    .italic()
+                               
                             }
                         }
                     }
