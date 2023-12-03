@@ -6,19 +6,19 @@ struct AccountView: View {
     let account: Account
     
     var body: some View {
-        VStack {
-           
+        VStack(alignment: .leading){
             
-                Text("Name: \(account.name ?? "")")
-                Text("Username: \(account.username ?? "")")
-                Text("Password: \(account.password ?? "")")
-                Text(calcTimeSince(date: account.date!))
-                    .foregroundColor(.gray)
-                    .italic()
-           
+            VStack(alignment: .leading){
+            Text("Name: \(account.name ?? "")")
+            Text("Username: \(account.username ?? "")")
+            Text("Password: \(account.password ?? "")")
+            Text(calcTimeSince(date: account.date!))
+                .foregroundColor(.gray)
+                .italic()
             
-            Spacer()
             
+        
+        }
         }
        
         .toolbar {
