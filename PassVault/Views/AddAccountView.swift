@@ -18,11 +18,19 @@ struct AddAccountView: View {
             Form {
                 Section() {
                     TextField("Account", text: $name)
+                        .autocapitalization(.none)
+                        .autocorrectionDisabled()
+                    
+                    
                     
                     TextField("Username", text: $username)
-                    
+                        .autocapitalization(.none)
+                        .autocorrectionDisabled()
                     
                     TextField("Password", text: $password)
+                        .autocapitalization(.none)
+                        .autocorrectionDisabled()
+                    
                     
                     HStack {
                         Spacer()
