@@ -20,12 +20,23 @@ struct ContentView: View {
                                 VStack(alignment: .leading, spacing: 6) {
                                     Text(account.name!)
                                         .bold()
-                                        .foregroundColor(.red)
+                                        .foregroundColor(.green)
                                         .font(.system(size: 15))
                                     
                                     Text(String(repeating: "•", count: account.username?.count ?? 0))
                                     
                                     Text(String(repeating: "•", count: account.password?.count ?? 0))
+                                    
+                                    
+                                 
+                                        Text(calcTimeSince(date: account.date!))
+                                            .foregroundColor(.gray)
+                                            .font(.system(size: 10))
+                                           
+                                        
+                                    
+                                  
+                                    
                                 }
                             }
                             .onTapGesture {

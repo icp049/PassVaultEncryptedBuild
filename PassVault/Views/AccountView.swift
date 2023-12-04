@@ -40,14 +40,7 @@ struct AccountView: View {
                         }
                         .padding()
 
-                        VStack {
-                            Text(calcTimeSince(date: account.date!))
-                                .foregroundColor(.gray)
-                                .font(.system(size: 10))
-                                .padding(.leading, 65)
-                            
-                        }
-                        .padding()
+                        
                         
                         VStack{
                             Button("Decrypt") {
