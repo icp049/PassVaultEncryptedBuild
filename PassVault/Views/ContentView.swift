@@ -33,7 +33,7 @@ struct ContentView: View {
                                     // If authenticated, navigate to the AccountView
                                     if success {
                                         // You may perform additional actions if needed
-                                    }
+                                    }   // I still ned to change this because im not sure if faceid is working
                                 }
                             }
                         }
