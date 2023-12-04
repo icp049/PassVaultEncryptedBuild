@@ -8,17 +8,6 @@ struct AccountView: View {
     let account: Account
 
     var body: some View {
-        GeometryReader { geometry in
-            ZStack {
-                RoundedRectangle(cornerRadius: 10)
-                    .fill(Color.blue).opacity(0.4)
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 20)
-                            .stroke(Color.black, lineWidth: 0)
-                    )
-                    .frame(height: min(geometry.size.height - 40, 300))
-                    .padding()
-
                 VStack(alignment: .leading) {
                     VStack(alignment: .leading) {
                         VStack {
@@ -55,6 +44,8 @@ struct AccountView: View {
                             Text(calcTimeSince(date: account.date!))
                                 .foregroundColor(.gray)
                                 .font(.system(size: 10))
+                                .padding(.leading, 65)
+                            
                         }
                         .padding()
                         
@@ -75,8 +66,8 @@ struct AccountView: View {
                         .padding(.leading, 65)
                     }
                 }
-            }
-        }
+            
+        
         .navigationBarTitle(account.name ?? "", displayMode: .inline)
         .navigationBarBackButtonHidden(true)
         .navigationBarItems(leading: BackButton { presentationMode.wrappedValue.dismiss() })
