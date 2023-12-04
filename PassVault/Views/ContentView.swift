@@ -7,8 +7,7 @@ struct ContentView: View {
     @FetchRequest(sortDescriptors: [SortDescriptor(\.date, order: .reverse)]) var account: FetchedResults<Account>
     
     @State private var showingAddView = false
-    @State private var unlocked = false
-    @State private var text = "LOCKED"
+
     
     var body: some View {
         NavigationView {
@@ -86,28 +85,7 @@ struct ContentView: View {
         }
     }
     
-    func authenticate(completion: @escaping (Bool) -> Void) {
-        let context = LAContext()
-        var error: NSError?
-        
-        if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics,
-                                     error: &error) {
-            context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics,
-                                   localizedReason: "Security") { success, authenticationError in
-                
-                if success {
-                    text = "UNLOCKED"
-                    completion(true)
-                } else {
-                    text = "There was a problem"
-                    completion(false)
-                }
-            }
-        } else {
-            text = "Phone does not have biometrics"
-            completion(false)
-        }
-    }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
