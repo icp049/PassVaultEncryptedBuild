@@ -8,6 +8,9 @@ struct AccountView: View {
 
     @State private var unlocked = false
     @State private var text = "LOCKED"
+    
+    
+    
 
     let account: Account
 
@@ -21,7 +24,7 @@ struct AccountView: View {
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 30, height: 30)
 
-                        Text(revealCredentials ? "\(account.username ?? "Not Available")" : getRandomizedText())
+                        Text(revealCredentials ? "\(account.username ?? "Not Available")" : getCensoredText())
                             .italic()
                             .foregroundColor(.gray)
                             .animation(.easeInOut(duration: 0.5))
@@ -35,7 +38,7 @@ struct AccountView: View {
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 30, height: 30)
-                        Text(revealCredentials ? "\(account.password ?? "Not Available")" : getRandomizedText())
+                        Text(revealCredentials ? "\(account.password ?? "Not Available")" : getCensoredText())
                             .italic()
                             .foregroundColor(.gray)
                             .animation(.easeInOut(duration: 0.5))
@@ -106,6 +109,7 @@ struct AccountView: View {
                     text = "There was a problem"
                     completion(false)
                 }
+                
             }
         } else {
             text = "Phone does not have biometrics"
@@ -113,25 +117,13 @@ struct AccountView: View {
         }
     }
 
-    func getRandomizedText() -> String {
+    func getCensoredText() -> String {
         return "********************"
     }
 
     
     
 
-    struct BackButton: View {
-        var action: () -> Void
-
-        var body: some View {
-            Button(action: action) {
-                Image(systemName: "chevron.left")
-                    .foregroundColor(.blue)
-                    .imageScale(.large)
-                    .frame(width: 32, height: 32)
-                    .background(Color.clear)
-            }
-        }
-    }
+    
 }
 

@@ -18,6 +18,8 @@
 		A62B2A882B16F2F5003ADE36 /* EditAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62B2A872B16F2F5003ADE36 /* EditAccountView.swift */; };
 		A6828B3A2B1C1F44009CA6C8 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6828B392B1C1F44009CA6C8 /* AccountView.swift */; };
 		A6828B3C2B1C360D009CA6C8 /* RUButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6828B3B2B1C360D009CA6C8 /* RUButton.swift */; };
+		A6828B422B1EC681009CA6C8 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6828B412B1EC681009CA6C8 /* AccountViewController.swift */; };
+		A6828B452B1EC895009CA6C8 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6828B442B1EC895009CA6C8 /* BackButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		A62B2A872B16F2F5003ADE36 /* EditAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAccountView.swift; sourceTree = "<group>"; };
 		A6828B392B1C1F44009CA6C8 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		A6828B3B2B1C360D009CA6C8 /* RUButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RUButton.swift; sourceTree = "<group>"; };
+		A6828B412B1EC681009CA6C8 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		A6828B442B1EC895009CA6C8 /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,8 @@
 		A62B2A6A2B16EF56003ADE36 /* PassVault */ = {
 			isa = PBXGroup;
 			children = (
+				A6828B432B1EC875009CA6C8 /* components */,
+				A6828B402B1EC66D009CA6C8 /* ViewModels */,
 				A62B2A802B16F21D003ADE36 /* helpers */,
 				A62B2A7F2B16F211003ADE36 /* Views */,
 				A62B2A792B16F00F003ADE36 /* DataModel */,
@@ -99,7 +105,6 @@
 				A62B2A852B16F2DA003ADE36 /* ContentView.swift */,
 				A62B2A872B16F2F5003ADE36 /* EditAccountView.swift */,
 				A6828B392B1C1F44009CA6C8 /* AccountView.swift */,
-				A6828B3B2B1C360D009CA6C8 /* RUButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -108,8 +113,25 @@
 			isa = PBXGroup;
 			children = (
 				A62B2A812B16F266003ADE36 /* TimeFormatting.swift */,
+				A6828B412B1EC681009CA6C8 /* AccountViewController.swift */,
 			);
 			path = helpers;
+			sourceTree = "<group>";
+		};
+		A6828B402B1EC66D009CA6C8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A6828B432B1EC875009CA6C8 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				A6828B442B1EC895009CA6C8 /* BackButton.swift */,
+				A6828B3B2B1C360D009CA6C8 /* RUButton.swift */,
+			);
+			path = components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,10 +206,12 @@
 			files = (
 				A62B2A822B16F266003ADE36 /* TimeFormatting.swift in Sources */,
 				A6828B3C2B1C360D009CA6C8 /* RUButton.swift in Sources */,
+				A6828B452B1EC895009CA6C8 /* BackButton.swift in Sources */,
 				A62B2A7C2B16F05D003ADE36 /* AccountModel.xcdatamodeld in Sources */,
 				A62B2A862B16F2DA003ADE36 /* ContentView.swift in Sources */,
 				A62B2A842B16F2AC003ADE36 /* AddAccountView.swift in Sources */,
 				A6828B3A2B1C1F44009CA6C8 /* AccountView.swift in Sources */,
+				A6828B422B1EC681009CA6C8 /* AccountViewController.swift in Sources */,
 				A62B2A7E2B16F193003ADE36 /* DataController.swift in Sources */,
 				A62B2A882B16F2F5003ADE36 /* EditAccountView.swift in Sources */,
 				A62B2A6C2B16EF56003ADE36 /* PassVaultApp.swift in Sources */,
