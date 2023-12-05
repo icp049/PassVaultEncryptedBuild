@@ -23,7 +23,7 @@ struct AddAccountView: View {
                     
                     
                     
-                    TextField("Username", text: $username)
+                    TextField("Username/Email", text: $username)
                         .autocapitalization(.none)
                         .autocorrectionDisabled()
                     
