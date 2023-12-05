@@ -73,7 +73,11 @@ struct AccountView: View {
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button("Edit") {
-                    showingEditView.toggle()
+                    authenticateWithFaceID { success in
+                        if success {
+                            showingEditView.toggle()
+                        }
+                    }
                 }
             }
         }
