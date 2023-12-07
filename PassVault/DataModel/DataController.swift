@@ -47,3 +47,5 @@ class DataController: ObservableObject{
    }
 
 }
+
+//ready for testing
