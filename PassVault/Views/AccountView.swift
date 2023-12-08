@@ -59,7 +59,7 @@ struct AccountView: View {
                         }
                     }
                     .padding()
-                    
+                    .bold()
                     .background(colorScheme == .dark ? .white : .black)
                     .cornerRadius(8)
                     .padding(.bottom, 20)
