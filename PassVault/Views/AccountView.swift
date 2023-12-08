@@ -21,7 +21,7 @@ struct AccountView: View {
             VStack(alignment: .leading) {
                 VStack {
                     HStack {
-                        Image("document")
+                        Image("yellowcard")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 30, height: 30)
@@ -36,7 +36,7 @@ struct AccountView: View {
 
                 VStack {
                     HStack {
-                        Image("key")
+                        Image("yellowkey")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 30, height: 30)
