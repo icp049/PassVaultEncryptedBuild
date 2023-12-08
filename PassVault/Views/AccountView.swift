@@ -5,7 +5,9 @@ struct AccountView: View {
     @State private var showingEditView = false
     @State private var revealCredentials = false
     @Environment(\.presentationMode) var presentationMode
-
+    @Environment(\.colorScheme) var colorScheme
+    
+    
     @State private var unlocked = false
     @State private var text = "LOCKED"
     
@@ -57,12 +59,13 @@ struct AccountView: View {
                         }
                     }
                     .padding()
-                    .background(Color.black)
-                    .foregroundColor(.white)
+                    .background(colorScheme == .dark ? .white : .black)
                     .cornerRadius(8)
                     .padding(.bottom, 20)
                     .padding(.trailing, 20)
                     .opacity(revealCredentials ? 0 : 1)
+                    .foregroundColor(colorScheme == .dark ? .black : .white)
+                    
                 }
                 .padding(.leading, 65)
             }
