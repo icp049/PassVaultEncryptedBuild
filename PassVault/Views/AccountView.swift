@@ -59,6 +59,7 @@ struct AccountView: View {
                         }
                     }
                     .padding()
+                    
                     .background(colorScheme == .dark ? .white : .black)
                     .cornerRadius(8)
                     .padding(.bottom, 20)
@@ -68,6 +69,7 @@ struct AccountView: View {
                     
                 }
                 .padding(.leading, 65)
+                .padding(.top,30)
             }
         }
         .navigationBarTitle(account.name ?? "", displayMode: .inline)
