@@ -70,8 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				A6828B432B1EC875009CA6C8 /* components */,
-				A6828B402B1EC66D009CA6C8 /* ViewModels */,
-				A62B2A802B16F21D003ADE36 /* helpers */,
+				A62B2A802B16F21D003ADE36 /* Helpers */,
 				A62B2A7F2B16F211003ADE36 /* Views */,
 				A62B2A792B16F00F003ADE36 /* DataModel */,
 				A62B2A6B2B16EF56003ADE36 /* PassVaultApp.swift */,
@@ -109,20 +108,13 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		A62B2A802B16F21D003ADE36 /* helpers */ = {
+		A62B2A802B16F21D003ADE36 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
 				A62B2A812B16F266003ADE36 /* TimeFormatting.swift */,
 				A6828B412B1EC681009CA6C8 /* AccountViewController.swift */,
 			);
-			path = helpers;
-			sourceTree = "<group>";
-		};
-		A6828B402B1EC66D009CA6C8 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModels;
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		A6828B432B1EC875009CA6C8 /* components */ = {
