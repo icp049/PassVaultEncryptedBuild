@@ -69,7 +69,7 @@ struct AccountView: View {
                     
                 }
                 .padding(.leading, 65)
-                .padding(.top,30)
+                .padding(.top,25)
             }
         }
         .navigationBarTitle(account.name ?? "", displayMode: .inline)
