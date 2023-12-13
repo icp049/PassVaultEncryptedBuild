@@ -17,8 +17,8 @@ struct AccountView: View {
     let account: Account
 
     var body: some View {
-        VStack(alignment: .leading) {
-            VStack(alignment: .leading) {
+        VStack{
+            VStack {
                 VStack {
                     HStack {
                         Image("yellowcard")
@@ -33,6 +33,7 @@ struct AccountView: View {
                     }
                 }
                 .padding()
+                .frame(maxWidth: .infinity, alignment: .center)
 
                 VStack {
                     HStack {
@@ -47,6 +48,7 @@ struct AccountView: View {
                     }
                 }
                 .padding()
+                .frame(maxWidth: .infinity, alignment: .center)
 
                 VStack {
                     Button("Decrypt") {
@@ -63,12 +65,11 @@ struct AccountView: View {
                     .background(colorScheme == .dark ? .white : .black)
                     .cornerRadius(8)
                     .padding(.bottom, 20)
-                    .padding(.trailing, 20)
                     .opacity(revealCredentials ? 0 : 1)
                     .foregroundColor(colorScheme == .dark ? .black : .white)
-                    
+                    .frame(maxWidth: .infinity, alignment: .center)
                 }
-                .padding(.leading, 65)
+               
                 .padding(.top,25)
             }
         }
