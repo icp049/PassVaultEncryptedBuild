@@ -4,6 +4,7 @@ import LocalAuthentication
 
 struct ContentView: View {
     @Environment(\.managedObjectContext) var managedObjContext
+    @Environment(\.colorScheme) var colorScheme
     @FetchRequest(sortDescriptors: [SortDescriptor(\.date, order: .reverse)]) var account: FetchedResults<Account>
     
     @State private var showingAddView = false
@@ -19,12 +20,15 @@ struct ContentView: View {
                                 VStack(alignment: .leading, spacing: 6) {
                                     Text(account.name!)
                                         .bold()
-                                        .foregroundColor(.green)
+                                        .foregroundColor(colorScheme == .dark ? .white : .black)
                                         .font(.system(size: 15))
                                     
+                                    
                                     Text(String(repeating: "•", count: account.username?.count ?? 0))
+                                        .foregroundColor(.gray).opacity(0.6)
                                     
                                     Text(String(repeating: "•", count: account.password?.count ?? 0))
+                                        .foregroundColor(.gray).opacity(0.6)
                                     
                                     
                                  

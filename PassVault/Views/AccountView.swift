@@ -28,8 +28,9 @@ struct AccountView: View {
 
                         Text(revealCredentials ? "\(account.username ?? "Not Available")" : getCensoredText())
                             .italic()
-                            .foregroundColor(.gray)
                             .animation(.easeInOut(duration: 0.5))
+                            .foregroundColor(.gray).opacity(0.6)
+                            
                     }
                 }
                 .padding()
@@ -43,8 +44,8 @@ struct AccountView: View {
                             .frame(width: 30, height: 30)
                         Text(revealCredentials ? "\(account.password ?? "Not Available")" : getCensoredText())
                             .italic()
-                            .foregroundColor(.gray)
                             .animation(.easeInOut(duration: 0.5))
+                            .foregroundColor(.gray).opacity(0.6)
                     }
                 }
                 .padding()
