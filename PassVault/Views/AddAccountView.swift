@@ -1,7 +1,4 @@
-//  SampleCoreData
-//
-//  Created by Federico on 18/02/2022.
-//
+
 
 import SwiftUI
 
